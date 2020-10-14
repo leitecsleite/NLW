@@ -1,4 +1,8 @@
-import express, { response } from 'express'
+import express from 'express'
+import { getRepository } from 'typeorm'
+import Orphanage from './models/Orphanage'
+
+import './database/connection'; 
 
 const app = express();
 
@@ -25,12 +29,9 @@ app.use(express.json());
 
 
 
-
-
-app.post('/users/:id', (request, response) => {
-   return response.json({ message: 'Hello World'}); 
-}); 
-
 app.listen(3333); 
 
-//localHost: 333; 
+//localHost: 3333;
+
+
+
