@@ -1,7 +1,9 @@
 # NLW
  
  <h1 align="center">NWL #3</h1>
- 
+  <h1 align="center">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/banner.png" />
+</h1>
  <h1 align="center">
     <a href="https://pt-br.reactjs.org/">🔗 React</a>
 </h1>
