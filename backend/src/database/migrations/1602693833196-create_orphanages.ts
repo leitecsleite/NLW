@@ -7,13 +7,17 @@ export class createOrphanages1602693833196 implements MigrationInterface {
         await queryRunner.createTable(new Table({
             name: 'orphanages', 
 
-            columns: [{
-                name: 'id', 
-                type: 'integer', 
-                unsigned: true, 
-                isPrimary: true, 
-                generationStrategy: 'increment', 
-            }, 
+            columns: [
+             { 
+               name: 'id', 
+               type:'integer', 
+               unsigned: true, 
+               isPrimary: true, 
+               isGenerated: true, 
+               generationStrategy: 'increment',   
+
+             }, 
+
             {
                name: 'name', 
                type: 'varchar'
